@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finixy - Premium Lifestyle Store</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 scroll-smooth">
+    <!-- Header -->
+    <header class="fixed top-0 w-full bg-white shadow-md z-50">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <h1 class="text-3xl font-bold playfair">Finixy</h1>
+                    <span class="text-xs bg-gradient-to-r from-yellow-400 to-yellow-600 text-white px-2 py-1 rounded-full">Premium</span>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="nav-link text-gray-700 hover:text-gray-900 font-medium">Home</a>
+                    <a href="#about" class="nav-link text-gray-700 hover:text-gray-900 font-medium">About</a>
+                    <a href="#products" class="nav-link text-gray-700 hover:text-gray-900 font-medium">Products</a>
+                    <a href="#policy" class="nav-link text-gray-700 hover:text-gray-900 font-medium">Policy</a>
+                    <a href="#contact" class="nav-link text-gray-700 hover:text-gray-900 font-medium">Contact</a>
+                    <a href="#social" class="nav-link text-gray-700 hover:text-gray-900 font-medium">Social</a>
+                </div>
+                
+                <div class="flex items-center space-x-4">
+                    <button id="cartButton" class="relative text-gray-700 hover:text-gray-900">
+                        <i class="fas fa-shopping-cart text-xl"></i>
+                        <span id="cartCount" class="cart-badge absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">0</span>
+                    </button>
+                    <button id="mobileMenuButton" class="md:hidden text-gray-700">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white border-t">
+            <div class="container mx-auto px-4 py-4 space-y-3">
+                <a href="#home" class="block text-gray-700 hover:text-gray-900 font-medium">Home</a>
+                <a href="#about" class="block text-gray-700 hover:text-gray-900 font-medium">About</a>
+                <a href="#products" class="block text-gray-700 hover:text-gray-900 font-medium">Products</a>
+                <a href="#policy" class="block text-gray-700 hover:text-gray-900 font-medium">Policy</a>
+                <a href="#contact" class="block text-gray-700 hover:text-gray-900 font-medium">Contact</a>
+                <a href="#social" class="block text-gray-700 hover:text-gray-900 font-medium">Social</a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Hero Section -->
+    <section id="home" class="gradient-bg text-white pt-24 pb-20">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-5xl md:text-6xl font-bold playfair mb-6">Welcome to Finixy</h2>
+                    <p class="text-xl mb-8 text-gray-300">Discover premium lifestyle products crafted with excellence. Elevate your everyday with our curated collection.</p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#products" class="bg-white text-black px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition">Shop Now</a>
+                        <a href="#about" class="border-2 border-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-black transition">Learn More</a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="https://picsum.photos/seed/finixy-hero/600/400" alt="Finixy Hero" class="rounded-lg shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold playfair mb-4">About Finixy</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">We are committed to bringing you the finest products with unmatched quality and style.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center hover-lift p-6 rounded-lg">
+                    <div class="w-20 h-20 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-gem text-3xl text-yellow-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Premium Quality</h3>
+                    <p class="text-gray-600">Every product is carefully selected and tested for quality assurance.</p>
+                </div>
+                
+                <div class="text-center hover-lift p-6 rounded-lg">
+                    <div class="w-20 h-20 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-shipping-fast text-3xl text-yellow-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Fast Delivery</h3>
+                    <p class="text-gray-600">Quick and reliable delivery to your doorstep across India.</p>
+                </div>
+                
+                <div class="text-center hover-lift p-6 rounded-lg">
+                    <div class="w-20 h-20 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-headset text-3xl text-yellow-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">24/7 Support</h3>
+                    <p class="text-gray-600">Our customer support team is always here to help you.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Products Section -->
+    <section id="products" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold playfair mb-4">Our Products</h2>
+                <p class="text-gray-600">Explore our exclusive collection of premium products</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 lg:grid-cols-4 gap-6" id="productsGrid">
+                <!-- Products will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+    
+    <!-- Policy Section -->
+    <section id="policy" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold playfair mb-4">Our Policies</h2>
+                <p class="text-gray-600">Transparent policies for your peace of mind</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="border rounded-lg p-6 hover-lift">
+                    <h3 class="text-xl font-semibold mb-3 flex items-center">
+                        <i class="fas fa-undo text-yellow-600 mr-3"></i>
+                        Return Policy
+                    </h3>
+                    <p class="text-gray-600 mb-3">Easy 7-day return policy on all products. Items must be in original condition with tags attached.</p>
+                    <ul class="text-sm text-gray-500 space-y-1">
+                        <li>• Free return pickup available</li>
+                        <li>• Instant refund processing</li>
+                        <li>• Hassle-free exchange</li>
+                    </ul>
+                </div>
+                
+                <div class="border rounded-lg p-6 hover-lift">
+                    <h3 class="text-xl font-semibold mb-3 flex items-center">
+                        <i class="fas fa-shield-alt text-yellow-600 mr-3"></i>
+                        Privacy Policy
+                    </h3>
+                    <p class="text-gray-600 mb-3">Your privacy is our priority. We protect your personal information with advanced security measures.</p>
+                    <ul class="text-sm text-gray-500 space-y-1">
+                        <li>• 100% data encryption</li>
+                        <li>• No third-party sharing</li>
+                        <li>• GDPR compliant</li>
+                    </ul>
+                </div>
+                
+                <div class="border rounded-lg p-6 hover-lift">
+                    <h3 class="text-xl font-semibold mb-3 flex items-center">
+                        <i class="fas fa-truck text-yellow-600 mr-3"></i>
+                        Shipping Policy
+                    </h3>
+                    <p class="text-gray-600 mb-3">Fast and reliable shipping across India. Track your order in real-time.</p>
+                    <ul class="text-sm text-gray-500 space-y-1">
+                        <li>• Free shipping on orders above ₹999</li>
+                        <li>• 2-5 business days delivery</li>
+                        <li>• Cash on delivery available</li>
+                    </ul>
+                </div>
+                
+                <div class="border rounded-lg p-6 hover-lift">
+                    <h3 class="text-xl font-semibold mb-3 flex items-center">
+                        <i class="fas fa-credit-card text-yellow-600 mr-3"></i>
+                        Payment Policy
+                    </h3>
+                    <p class="text-gray-600 mb-3">Secure payment options for your convenience. Multiple payment methods supported.</p>
+                    <ul class="text-sm text-gray-500 space-y-1">
+                        <li>• All major cards accepted</li>
+                        <li>• UPI payments</li>
+                        <li>• Net banking</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold playfair mb-4">Contact Us</h2>
+                <p class="text-gray-600">We're here to help you with any questions</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6">Get in Touch</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-phone text-yellow-600 mr-4 w-6"></i>
+                            <span>+91 8891519975</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope text-yellow-600 mr-4 w-6"></i>
+                            <span>hello@finixy.com</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-map-marker-alt text-yellow-600 mr-4 w-6"></i>
+                            <span>Mumbai, Maharashtra, India</span>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <h4 class="font-semibold mb-3">Business Hours</h4>
+                        <div class="text-gray-600 space-y-1">
+                            <p>Monday - Friday: 9:00 AM - 8:00 PM</p>
+                            <p>Saturday: 10:00 AM - 6:00 PM</p>
+                            <p>Sunday: Closed</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <form id="contactForm" class="space-y-4">
+                        <input type="text" placeholder="Your Name" required class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:border-yellow-600">
+                        <input type="email" placeholder="Your Email" required class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:border-yellow-600">
+                        <textarea placeholder="Your Message" rows="4" required class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:border-yellow-600"></textarea>
+                        <button type="submit" class="w-full bg-black text-white py-3 rounded-lg font-semibold hover:bg-gray-800 transition">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Social Media Section -->
+    <section id="social" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold playfair mb-4">Follow Us</h2>
+                <p class="text-gray-600">Stay connected for latest updates and offers</p>
+            </div>
+            
+            <div class="flex justify-center space-x-6 mb-8">
+                <a href="#" class="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center hover:bg-yellow-100 transition">
+                    <i class="fab fa-facebook-f text-2xl text-gray-700"></i>
+                </a>
+                <a href="#" class="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center hover:bg-yellow-100 transition">
+                    <i class="fab fa-instagram text-2xl text-gray-700"></i>
+                </a>
+                <a href="#" class="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center hover:bg-yellow-100 transition">
+                    <i class="fab fa-twitter text-2xl text-gray-700"></i>
+                </a>
+                <a href="#" class="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center hover:bg-yellow-100 transition">
+                    <i class="fab fa-youtube text-2xl text-gray-700"></i>
+                </a>
+                <a href="#" class="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center hover:bg-yellow-100 transition">
+                    <i class="fab fa-linkedin-in text-2xl text-gray-700"></i>
+                </a>
+            </div>
+            
+            <div class="text-center">
+                <p class="text-gray-600 mb-4">Subscribe to our newsletter for exclusive deals</p>
+                <form id="newsletterForm" class="max-w-md mx-auto flex gap-2">
+                    <input type="email" placeholder="Enter your email" required class="flex-1 px-4 py-3 border rounded-lg focus:outline-none focus:border-yellow-600">
+                    <button type="submit" class="bg-black text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-800 transition">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-black text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-2xl font-bold playfair mb-4">Finixy</h3>
+                    <p class="text-gray-400">Premium lifestyle store for the modern individual.</p>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#home" class="hover:text-white transition">Home</a></li>
+                        <li><a href="#about" class="hover:text-white transition">About</a></li>
+                        <li><a href="#products" class="hover:text-white transition">Products</a></li>
+                        <li><a href="#policy" class="hover:text-white transition">Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Support</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#contact" class="hover:text-white transition">Contact Us</a></li>
+                        <li><a href="#" class="hover:text-white transition">FAQ</a></li>
+                        <li><a href="#" class="hover:text-white transition">Shipping Info</a></li>
+                        <li><a href="#" class="hover:text-white transition">Returns</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Order via WhatsApp</h4>
+                    <a href="https://wa.me/918891519975" target="_blank" class="inline-flex items-center bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition">
+                        <i class="fab fa-whatsapp mr-2"></i>
+                        Chat Now
+                    </a>
+                    <p class="text-gray-400 mt-2 text-sm">Click to order directly on WhatsApp</p>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Finixy. All rights reserved. | Made with <i class="fas fa-heart text-red-500"></i> in India</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Product Detail Modal -->
+    <div id="productModal" class="fixed inset-0 z-50 hidden">
+        <div class="modal-backdrop absolute inset-0 bg-black bg-opacity-50"></div>
+        <div class="relative flex items-center justify-center min-h-screen p-4">
+            <div class="bg-white rounded-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto">
+                <div class="p-6">
+                    <button id="closeProductModal" class="absolute top-4 right-4 text-gray-500 hover:text-gray-700">
+                        <i class="fas fa-times text-2xl"></i>
+                    </button>
+                    
+                    <div id="modalContent" class="grid md:grid-cols-2 gap-8">
+                        <!-- Modal content will be dynamically loaded -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Cart Sidebar -->
+    <div id="cartSidebar" class="fixed right-0 top-0 h-full w-96 bg-white shadow-2xl transform translate-x-full transition-transform z-50">
+        <div class="p-6 border-b">
+            <div class="flex justify-between items-center">
+                <h3 class="text-2xl font-semibold">Shopping Cart</h3>
+                <button id="closeCartButton" class="text-gray-500 hover:text-gray-700">
+                    <i class="fas fa-times text-xl"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div class="flex-1 overflow-y-auto p-6">
+            <div id="cartItems" class="space-y-4">
+                <!-- Cart items will be dynamically loaded -->
+            </div>
+            
+            <div id="emptyCart" class="text-center py-12">
+                <i class="fas fa-shopping-cart text-6xl text-gray-300 mb-4"></i>
+                <p class="text-gray-500">Your cart is empty</p>
+            </div>
+        </div>
+        
+        <div class="border-t p-6">
+            <div class="flex justify-between mb-4">
+                <span class="font-semibold">Total:</span>
+                <span id="cartTotal" class="font-bold text-xl">₹0</span>
+            </div>
+            <button id="checkoutButton" class="w-full bg-black text-white py-3 rounded-lg font-semibold hover:bg-gray-800 transition">
+                Proceed to Checkout
+            </button>
+            <button id="whatsappOrderButton" class="w-full mt-2 bg-green-600 text-white py-3 rounded-lg font-semibold hover:bg-green-700 transition">
+                Order via WhatsApp
+            </button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
