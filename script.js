@@ -4,7 +4,7 @@ const products = [
         id: 1,
         name: "Premium Leather Wallet",
         price: 2999,
-        image: "https://picsum.photos/seed/wallet1/300/300",
+        image: "https://tse2.mm.bing.net/th/id/OIP.M8WygP5O_yayUNIDSH-OUwHaHa?rs=1&pid=ImgDetMain&o=7&rm=3",
         description: "Handcrafted genuine leather wallet with multiple card slots and coin pocket.",
         details: "Made from premium Italian leather, this wallet features RFID protection, 8 card slots, 2 bill compartments, and a secure coin pocket. Dimensions: 11cm x 9cm x 2cm."
     },
@@ -12,7 +12,8 @@ const products = [
         id: 2,
         name: "Luxury Watch",
         price: 15999,
-        image: "https://picsum.photos/seed/watch1/300/300",
+        image: "OIP.webp",
+        
         description: "Elegant timepiece with Swiss movement and sapphire crystal.",
         details: "This luxury watch features automatic movement, water resistance up to 100m, date display, and comes with a genuine leather strap. Case diameter: 42mm."
     },
@@ -20,7 +21,7 @@ const products = [
         id: 3,
         name: "Designer Sunglasses",
         price: 4999,
-        image: "https://picsum.photos/seed/sunglasses1/300/300",
+        image: "shose.webp",
         description: "UV protection sunglasses with polarized lenses.",
         details: "100% UV protection, polarized lenses for reduced glare, lightweight acetate frame, comes with protective case and cleaning cloth."
     },
